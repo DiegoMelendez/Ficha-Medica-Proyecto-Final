@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Principal">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="600.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="79.0" layoutX="14.0" layoutY="33.0">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="154.0" layoutY="43.0" prefHeight="60.0" prefWidth="200.0" text="PACIENTES " textAlignment="CENTER">
+               <font>
+                  <Font name="OCR A Extended" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_verlista" contentDisplay="CENTER" layoutX="147.0" layoutY="214.0" mnemonicParsing="false" onAction="#ver_lista" prefHeight="67.0" prefWidth="207.0" text="Ver lista">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_agregar" layoutX="147.0" layoutY="306.0" mnemonicParsing="false" onAction="#agregar_paciente" prefHeight="67.0" prefWidth="207.0" text="Agregar paciente" textFill="#0061ff">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cancelar" layoutX="192.0" layoutY="395.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="67.0" prefWidth="116.0" text="Salir" textFill="RED">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="399.0" layoutY="537.0" text="Diego Melendez">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="554.0" text="Cesar Walteros">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
