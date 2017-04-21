@@ -51,6 +51,11 @@
                   <Font name="OCR A Extended" size="12.0" />
                </font>
             </Button>
+            <Button fx:id="btn_editar" layoutX="433.0" layoutY="126.0" mnemonicParsing="false" onAction="#editar" prefHeight="40.0" prefWidth="52.0" text="Edit" textFill="#058d1e">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

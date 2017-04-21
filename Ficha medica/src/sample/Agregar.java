@@ -25,8 +25,6 @@ public class Agregar {
     ArrayList<Paciente> Lista_paciente = (ArrayList<Paciente>) ois.readObject();
 
     @FXML
-    DatePicker date_nacimiento;
-    @FXML
     Button btn_verlista;
     @FXML
     TextField txt_nombre;
@@ -157,7 +155,7 @@ public class Agregar {
             String nom = new String(txt_nombre.getText());
             String ape = new String(txt_apellido.getText());
             String cedu = new String(txt_cedula.getText());
-            String naci = new String(String.valueOf(date_nacimiento.getValue()));
+            String naci = new String(txt_nacimiento.getText());
             String eda = new String(txt_edad.getText());
             String tel = new String(txt_telefono.getText());
             String sin = new String(txt_sintomas.getText());
@@ -262,6 +260,7 @@ public class Agregar {
     public void fecha(ActionEvent actionEvent) {
 
     }
+
 
 
 }

@@ -95,7 +95,7 @@
                   <Font name="OCR A Extended" size="12.0" />
                </font>
             </Button>
-            <DatePicker fx:id="date_nacimiento" layoutX="176.0" layoutY="275.0" onAction="#naciemiento" />
+            <TextField fx:id="txt_nacimiento" layoutX="176.0" layoutY="275.0" onAction="#naciemiento" />
          </children>
       </Pane>
    </children>
