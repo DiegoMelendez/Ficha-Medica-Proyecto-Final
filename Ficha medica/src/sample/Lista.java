@@ -7,9 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -17,6 +15,7 @@ import javax.swing.*;
 import java.io.*;
 import java.time.chrono.Chronology;
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class Lista {
 
@@ -120,7 +119,11 @@ public class Lista {
 
     public void eliminar(ActionEvent actionEvent) {
 
-        String s = (String)  JOptionPane.showInputDialog("Ingrese la posicion del paciente que desea eliminar: ");
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Eliminar.");
+        dialog.setHeaderText("Ingrese la pocision del paciente que desea eliminar.");
+        Optional<String> k = dialog.showAndWait();
+        String s = k.get();
        try {
            int ss = Integer.parseInt(s);
            Lista_paciente.remove(ss);
@@ -183,7 +186,12 @@ public class Lista {
     }
 
     public void editar(ActionEvent actionEvent) {
-        String s = (String)  JOptionPane.showInputDialog("Ingrese la posicion del paciente que desea editar: ");
+
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Eliminar.");
+        dialog.setHeaderText("Ingrese la pocision del paciente que desea editar.");
+        Optional<String> k = dialog.showAndWait();
+        String s = k.get();
         try {
             int ss = Integer.parseInt(s);
             Paciente d = Lista_paciente.get(ss);
